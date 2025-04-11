@@ -42,8 +42,8 @@ public class BarangLelang {
         statusLelang = false;
         if (pemenang != null) {
             pemenang.setSaldo(pemenang.getSaldo() - penawaranTertinggi);
-            System.out.println("Lelang ditutup! " + namaBarang + " terjual dengan harga " + (int)penawaranTertinggi + " kepada " + pemenang.getNama());
-            System.out.println("Sisa saldo " + pemenang.getNama() + ": Rp" + (int)pemenang.getSaldo());
+            System.out.println("Lelang ditutup! " + namaBarang + " terjual dengan harga " + penawaranTertinggi + " kepada " + pemenang.getNama());
+            System.out.println("Sisa saldo " + pemenang.getNama() + ": Rp" + pemenang.getSaldo());
         } else {
             System.out.println("Lelang ditutup! Tidak ada pemenang.");
         }
